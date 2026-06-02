@@ -1,3 +1,5 @@
+import { useState } from "react";
+
   const messages = [
   "Learn React ⚛️",
   "Apply for jobs 💼",
@@ -6,15 +8,20 @@
 
 export default function App(){
 
-  const step =1;
+  //step -1 add a new state variable
+  // step-2 use it in the code    
+  // step-3 then update the peice of code in event handler
+
+  const [step, setStep ] = useState(1); // default value of use state is given 1  inside paranthesis
 
 
   function handlePrevious(){
-    alert("Previous")
+    if(step >1) setStep(step-1)
   }
 
   function handleNext(){
-    alert("Next")
+
+    if(step < 3) setStep(step +1)
   }
 
 
