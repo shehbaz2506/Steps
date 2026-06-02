@@ -29,7 +29,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <>
       <button className="close" onClick={closeButton}>&times;</button>
       { isOpen && (
         <div className="steps">
@@ -60,6 +60,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
+    </ >
   );
 }
