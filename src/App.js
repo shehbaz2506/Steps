@@ -16,16 +16,16 @@ export default function App() {
   // const [test, setTest] = useState({name:"Shehbaz"})
 
   function handlePrevious() {
-    if (step > 1) setStep(step - 1);
+    if (step > 1) setStep((currStep)=> currStep -1);
   }
 
   function handleNext() {
-    if (step < 3) setStep(step + 1);
+    if (step < 3) setStep((currStep)=> currStep + 1 );
     // setTest({name:"Shehbaz"})
   }
 
   function closeButton(){
-    setIsOpen(!isOpen);
+    setIsOpen((open)=> !open );
   }
 
   return (
